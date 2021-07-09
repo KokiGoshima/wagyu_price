@@ -188,6 +188,9 @@
     <a href="#">プライバシーポリシー</a>
     <p>&copy; 20XX -How Much 和牛 -</p>
   </footer>
+  <div id="page-top">
+    <a href="#"></a>
+  </div>
   <div class="modal fade" id="search-studio" tabindex="-1" role="dialog" aria-labelledby="serach-studioLabel"
     aria-hidden="true">
     <div class="modal-dialog modal-dialog-centered" role="document">
@@ -237,3 +240,11 @@
 </body>
 
 </html>
+
+<script>
+  $('#page-top').on('click', function() {
+    $('body,html').animate({
+      scrollTop: 0
+    }, 500, 'swing');
+  });
+</script>
